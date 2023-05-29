@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(17, 34, 51);
+}
+#app {
+    width: fit-content;
+    margin: 25px auto;
+    text-align: center;
+    font-size: large;
+    color: cornflowerblue;
+}
+
+ul {
+    list-style: none;
+    margin: 50px auto;
+}
+
+li {
+    margin: 10px;
+}
+

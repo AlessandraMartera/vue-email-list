@@ -5,15 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
     <title>BeeMaiList</title>
 </head>
 <body>
     
     <div id="app">
-        <!-- Bonus: Far comparire gli indirizzi email solamente quando sono stati tutti generati. -->
-        <ul v-if="emailList.length === 10" v-for="email in emailList">
-            <li>{{email}}</li>
-        </ul>
+        <h1>Le tue 10 email random:</h1>
+        <main>
+
+            <!-- Bonus: Far comparire gli indirizzi email solamente quando sono stati tutti generati. -->
+            <ul v-if="emailList.length === 10" v-for="email in emailList">
+                <li>{{email}}</li>
+            </ul>
+        </main>
+       
     </div>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
