@@ -11,12 +11,12 @@
 <body>
     
     <div id="app">
-        <h1>Le tue 10 email random:</h1>
+        <h1>Le tue <span>{{n}}</span> email random:</h1>
         <main>
 
             <!-- Bonus: Far comparire gli indirizzi email solamente quando sono stati tutti generati. -->
-            <ul v-if="emailList.length === 10" v-for="email in emailList">
-                <li>{{email}}</li>
+            <ul v-if="emailList.length === n">
+                <li v-for="email in emailList">{{email}}</li>
             </ul>
         </main>
        
