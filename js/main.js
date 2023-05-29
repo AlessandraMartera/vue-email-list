@@ -6,7 +6,7 @@ const { createApp } = Vue
 createApp({
   data() {
     return {
-      "elEmail": "",
+    //   "elEmail": "",
       "emailList" : []
     }
   },
@@ -14,72 +14,64 @@ createApp({
     axios
       .get('https://flynn.boolean.careers/exercises/api/random/mail')
       .then( randomEmail => {
-            this.elEmail = randomEmail.data.response;
-            console.log(this.elEmail);
-            this.emailList.push(this.elEmail);
+            // this.elEmail = randomEmail.data.response;
+            // console.log(this.elEmail);
+            this.emailList.push(randomEmail.data.response);
         }),
     axios
         .get('https://flynn.boolean.careers/exercises/api/random/mail')
         .then( randomEmail => {
-                this.elEmail = randomEmail.data.response;
-                console.log(this.elEmail);
-                this.emailList.push(this.elEmail);
+            
+            this.emailList.push(randomEmail.data.response);
+        }),
+    axios
+    .get('https://flynn.boolean.careers/exercises/api/random/mail')
+    .then( randomEmail => {
+        
+            this.emailList.push(randomEmail.data.response);
+        }),
+    axios
+    .get('https://flynn.boolean.careers/exercises/api/random/mail')
+    .then( randomEmail => {
+        
+            this.emailList.push(randomEmail.data.response);
+        }),
+    axios
+    .get('https://flynn.boolean.careers/exercises/api/random/mail')
+    .then( randomEmail => {
+        
+            this.emailList.push(randomEmail.data.response);
+        }),
+    axios
+        .get('https://flynn.boolean.careers/exercises/api/random/mail')
+        .then( randomEmail => {
+            
+            this.emailList.push(randomEmail.data.response);
+        }),
+    axios
+        .get('https://flynn.boolean.careers/exercises/api/random/mail')
+        .then( randomEmail => {
+    
+            
+                this.emailList.push(randomEmail.data.response);
             }),
     axios
     .get('https://flynn.boolean.careers/exercises/api/random/mail')
     .then( randomEmail => {
-            this.elEmail = randomEmail.data.response;
-            console.log(this.elEmail);
-            this.emailList.push(this.elEmail);
+        
+            this.emailList.push(randomEmail.data.response);
         }),
     axios
     .get('https://flynn.boolean.careers/exercises/api/random/mail')
     .then( randomEmail => {
-            this.elEmail = randomEmail.data.response;
-            console.log(this.elEmail);
-            this.emailList.push(this.elEmail);
+        
+            this.emailList.push(randomEmail.data.response);
         }),
     axios
     .get('https://flynn.boolean.careers/exercises/api/random/mail')
     .then( randomEmail => {
-            this.elEmail = randomEmail.data.response;
-            console.log(this.elEmail);
-            this.emailList.push(this.elEmail);
-        }),
-    axios
-        .get('https://flynn.boolean.careers/exercises/api/random/mail')
-        .then( randomEmail => {
-            this.elEmail = randomEmail.data.response;
-            console.log(this.elEmail);
-            this.emailList.push(this.elEmail);
-        }),
-    axios
-        .get('https://flynn.boolean.careers/exercises/api/random/mail')
-        .then( randomEmail => {
-                this.elEmail = randomEmail.data.response;
-                console.log(this.elEmail);
-                this.emailList.push(this.elEmail);
-            }),
-    axios
-    .get('https://flynn.boolean.careers/exercises/api/random/mail')
-    .then( randomEmail => {
-            this.elEmail = randomEmail.data.response;
-            console.log(this.elEmail);
-            this.emailList.push(this.elEmail);
-        }),
-    axios
-    .get('https://flynn.boolean.careers/exercises/api/random/mail')
-    .then( randomEmail => {
-            this.elEmail = randomEmail.data.response;
-            console.log(this.elEmail);
-            this.emailList.push(this.elEmail);
-        }),
-    axios
-    .get('https://flynn.boolean.careers/exercises/api/random/mail')
-    .then( randomEmail => {
-            this.elEmail = randomEmail.data.response;
-            console.log(this.elEmail);
-            this.emailList.push(this.elEmail);
+        
+            this.emailList.push(randomEmail.data.response);
         }),
     console.log(this.emailList);
   }
